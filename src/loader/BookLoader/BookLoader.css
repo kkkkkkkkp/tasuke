@@ -1,0 +1,43 @@
+.book-opening-loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .book-cover, .book-page {
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 4px;
+    background-color: green;
+    transform-origin: right bottom;
+  }
+  
+  .book-cover {
+    right: 50%;
+    animation: cover-open 2s infinite;
+  }
+  
+  .book-page {
+    right: 0;
+    animation: page-open 2s infinite;
+  }
+  
+  @keyframes cover-open {
+    0%, 100% {
+      transform: rotate(0);
+    }
+    50% {
+      transform: rotate(-120deg);
+    }
+  }
+  
+  @keyframes page-open {
+    0%, 100% {
+      transform: rotate(0);
+    }
+    50% {
+      transform: rotate(-180deg);
+    }
+  }
+  

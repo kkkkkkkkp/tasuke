@@ -1,0 +1,30 @@
+.loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 100px auto;
+}
+  
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: rotate 2s linear infinite;
+}
+  
+@keyframes rotate {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translate(0, -40px) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translate(0, -40px) rotate(-360deg);
+    }
+}
+  
+  .dot-1 { animation-delay: -1.6s; }
+  .dot-2 { animation-delay: -1.2s; }
+  .dot-3 { animation-delay: -0.8s; }
+  .dot-4 { animation-delay: -0.4s; }

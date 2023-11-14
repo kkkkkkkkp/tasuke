@@ -1,0 +1,30 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+  
+.arc {
+    border: 3px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    animation: spin 1s linear infinite, fade 1.5s ease-in-out infinite;
+}
+  
+@keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+}
+  
+@keyframes fade {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+}
+  
