@@ -1,0 +1,26 @@
+/* PushingSquares.css */
+@keyframes push {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .pushing-squares-container {
+    display: flex;
+  }
+  
+  .square {
+    margin: 5px;
+    transition: transform 0.5s ease;
+  }
+  
+  .square.active {
+    animation: push 0.5s ease forwards;
+  }
+  

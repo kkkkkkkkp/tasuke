@@ -3,18 +3,26 @@ import './SuccessPage.css';
 
 interface SuccessPageProps {
   text?: string;
+  subText?: string;
   textColor?: string;
+  subTextColor?: string;
   textSize?: string;
+  subTextSize?: string;
   svgSize?: number;
   backgroundColor?: string;
+  subTextBool?:boolean;
 }
 
 const SuccessPage: React.FC<SuccessPageProps> = ({
   text = 'Completed!',
+  subText = 'ex:)Your next action is ___ .',
   textColor = '#FFFFFF',
+  subTextColor = '#FFF',
   textSize = '1.5em',
+  subTextSize = '0.8rem',
   svgSize = 100,
   backgroundColor = '#4CAF50',
+  subTextBool = true
 }) => {
   return (
     <div className="success-page" style={{ backgroundColor }}>
@@ -25,6 +33,7 @@ const SuccessPage: React.FC<SuccessPageProps> = ({
         </svg>
       </div>
       <div className="success-text" style={{ color: textColor, fontSize: textSize }}>{text}</div>
+      {subTextBool && (<div className="success-text" style={{ color: subTextColor, fontSize: subTextSize }}>{subText}</div>)}
     </div>
   );
 };
