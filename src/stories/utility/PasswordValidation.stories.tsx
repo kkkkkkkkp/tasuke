@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { PasswordOptions, validatePassword } from '../utility/regex';
+import { PasswordOptions, validatePassword } from '../../utility/regex';
 import { Meta, Story } from '@storybook/react';
 
 interface Props {

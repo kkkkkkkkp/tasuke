@@ -1,5 +1,5 @@
 import React from 'react';
-import LoadingFiveCircle from '../loader/LoadingFiveCircle/LoadingFiveCircle';
+import LoadingFiveCircle from '../../loader/LoadingFiveCircle/LoadingFiveCircle';
 import { Story, Meta } from '@storybook/react';
 
 interface LoadingFiveCirclerProps {

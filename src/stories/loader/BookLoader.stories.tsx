@@ -1,5 +1,5 @@
 import React from 'react';
-import BookLoader from '../loader/BookLoader/BookLoader';
+import BookLoader from '../../loader/BookLoader/BookLoader';
 import { Story, Meta } from '@storybook/react';
 
 interface BookLoaderProps {

@@ -1,5 +1,5 @@
 import React from 'react';
-import SuccessPage from '../view/SuccessPage/SuccessPage';
+import SuccessPage from '../../view/SuccessPage/SuccessPage';
 import { Story, Meta } from '@storybook/react';
 
 interface SuccessPageProps {

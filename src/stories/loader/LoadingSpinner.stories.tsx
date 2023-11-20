@@ -1,5 +1,5 @@
 import React from 'react';
-import LoadingSpinner from '../loader/LoadingSpinner/LoadingSpinner';
+import LoadingSpinner from '../../loader/LoadingSpinner/LoadingSpinner';
 import { Story, Meta } from '@storybook/react';
 
 export default {

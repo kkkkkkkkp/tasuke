@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
-import { limitCount, limitType } from '../utility/limitText';
+import { limitCount, limitType } from '../../utility/limitText';
 
 
 const LimitCountComponent: React.FC<limitType> = ({ content, limit, dot }) => (

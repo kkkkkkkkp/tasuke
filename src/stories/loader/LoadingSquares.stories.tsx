@@ -1,5 +1,5 @@
 
-import LoadingSquares from '../loader/LoadingSquares/LoadingSquares';
+import LoadingSquares from '../../loader/LoadingSquares/LoadingSquares';
 
 export default {
   title: 'Loading/Squres',

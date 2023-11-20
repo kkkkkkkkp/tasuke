@@ -1,5 +1,5 @@
 import React from 'react';
-import BouncingDotsLoader from '../loader/BouncingDotsLoader/BouncingDotsLoader';
+import BouncingDotsLoader from '../../loader/BouncingDotsLoader/BouncingDotsLoader';
 import { Story, Meta } from '@storybook/react';
 
 interface BouncingDotsLoaderProps {

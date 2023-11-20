@@ -1,10 +1,10 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
-import { dayFormat1 } from '../utility/format/dayFormat';
+import { dayFormat2 } from '../../../utility/format/dayFormat';
 
 
 export default {
-  title: 'Utility/Date Formatter/Format Day 1',
+  title: 'Utility/Date Formatter/Format Day 2',
   argTypes: {
     date: { control: 'date' },
   },
@@ -15,7 +15,7 @@ interface Props {
 }
 
 const DateFormatterComponent: React.FC<Props> = ({ date }) => (
-  <div>{dayFormat1(date)}</div>
+  <div>{dayFormat2(date)}</div>
 );
 
 const Template: Story<Props> = (args) => <DateFormatterComponent {...args} />;

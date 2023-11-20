@@ -23,6 +23,31 @@ function dayFormat4(date: Date): string {
     const minutes = date.getMinutes().toString().padStart(2, '0');
     return `${dayFormat2(date)}, ${hours}:${minutes}`;
 }
+
+function timeFormat(date: Date): string {
+    const hours = date.getHours().toString().padStart(2, '0');
+    const minutes = date.getMinutes().toString().padStart(2, '0');
+    return `${hours}:${minutes}`;
+}
+
+function weekdayWithDate(date: Date): string {
+    const weekday = date.toLocaleString('en-US', { weekday: 'long' });
+    return `${weekday}, ${dayFormat2(date)}`;
+}
+
+const getDifference = (firstDay: string, endDay?: string): number => {
+    const startDayDate = new Date(firstDay);
+    const endDate = endDay ? new Date(endDay) : new Date();
+
+    startDayDate.setHours(0, 0, 0, 0);
+    endDate.setHours(0, 0, 0, 0);
+
+    const differenceInMilliseconds = endDate.getTime() - startDayDate.getTime();
+    const differenceInDays = Math.ceil(differenceInMilliseconds / (1000 * 60 * 60 * 24));
+
+    return differenceInDays;
+}
+
   
-export { dayFormat1, dayFormat2, dayFormat3, dayFormat4 };
+export { dayFormat1, dayFormat2, dayFormat3, dayFormat4, timeFormat, weekdayWithDate, getDifference };
   

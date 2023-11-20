@@ -1,4 +1,4 @@
-import LoadingText from '../loader/LoadingText/LoadingText';
+import LoadingText from '../../loader/LoadingText/LoadingText';
 import { Story, Meta } from '@storybook/react';
 
 export default {

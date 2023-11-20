@@ -1,5 +1,5 @@
 import React from 'react';
-import LoadingArcCircle from '../loader/LoadingArcCircle/LoadingArcCircle';
+import LoadingArcCircle from '../../loader/LoadingArcCircle/LoadingArcCircle';
 import { Story, Meta } from '@storybook/react';
 
 interface LoaderProps {

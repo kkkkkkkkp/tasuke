@@ -1,5 +1,5 @@
 import React from 'react';
-import BlobLoader from '../loader/BlobLoader/BlobLoader';
+import BlobLoader from '../../loader/BlobLoader/BlobLoader';
 import { Story, Meta } from '@storybook/react';
 
 interface BlobLoaderProps {

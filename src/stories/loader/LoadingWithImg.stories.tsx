@@ -1,4 +1,4 @@
-import LoadingWithImg from "../loader/LoadingWithImg/LoadingWithImg";
+import LoadingWithImg from "../../loader/LoadingWithImg/LoadingWithImg";
 
 
 export default {

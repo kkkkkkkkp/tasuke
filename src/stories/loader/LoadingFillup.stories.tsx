@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import LoadingFillup from '../loader/LoadingFillup/LoadingFillup';
+import LoadingFillup from '../../loader/LoadingFillup/LoadingFillup';
 import { Story, Meta } from '@storybook/react';
 
 interface LoadingFillupProps {
