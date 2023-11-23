@@ -22,7 +22,7 @@ export default {
   
   const Template: Story<{ text: string }> = (args) => <CapitalizeComponent {...args} />;
   
-  export const Default = Template.bind({});
+export const Default = Template.bind({});
   Default.args = {
     text: 'hello world',
   };
