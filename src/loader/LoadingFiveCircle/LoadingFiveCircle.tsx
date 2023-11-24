@@ -16,7 +16,7 @@ const LoadingFiveCircle: React.FC<LoadingFiveCirclerProps> = ({
       {colors.map((color, index) => (
         <div
           key={index}
-          className={`dot dot-${index + 1}`}
+          className={`five-dot dot-${index + 1}`}
           style={{ backgroundColor: color, width: size + 'px', height: size + 'px' }}
         ></div>
       ))}

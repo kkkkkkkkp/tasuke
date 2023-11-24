@@ -48,6 +48,12 @@ const getDifference = (firstDay: string, endDay?: string): number => {
     return differenceInDays;
 }
 
+const addMonthsToDate = (date: any, monthsToAdd: any) => {
+    const d = new Date(date);
+    d.setMonth(d.getMonth() + monthsToAdd);
+    return dayFormat3(d);
+};
+
   
-export { dayFormat1, dayFormat2, dayFormat3, dayFormat4, timeFormat, weekdayWithDate, getDifference };
+export { dayFormat1, dayFormat2, dayFormat3, dayFormat4, timeFormat, weekdayWithDate, getDifference, addMonthsToDate };
   

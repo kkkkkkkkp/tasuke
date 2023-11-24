@@ -2,7 +2,7 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "target": "es2016",
-    "module": "commonjs",
+    "module": "esnext", // This should be 'esnext' for better compatibility with Webpack's module system
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -10,9 +10,11 @@
     "skipLibCheck": true,
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
-    "noEmit": true,
     "isolatedModules": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "declaration": true, // Generate .d.ts files only if you are creating a library
+    "outDir": "./dist", // Only needed if you want TypeScript to emit files, Webpack will handle this
+    "noEmit": false // Set to false if you want TypeScript to emit files, true if Webpack does all the emitting
   },
   "include": [
     "src/**/*",
@@ -22,6 +24,7 @@
     "node_modules",
     "babel.config.js",
     "jest.config.js",
-    "jest.setup.js"
+    "jest.setup.js",
+    "src/stories/**/*" // Exclude stories if they are not part of your build
   ]
 }
