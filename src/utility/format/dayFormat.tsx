@@ -51,7 +51,7 @@ const getDifference = (firstDay: string, endDay?: string): number => {
 const addMonthsToDate = (date: any, monthsToAdd: number) => {
     const d = new Date(date);
     d.setMonth(d.getMonth() + monthsToAdd);
-    return dayFormat3(d);
+    return d;
 };
 
   
